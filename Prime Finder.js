@@ -10,8 +10,8 @@ function findPrimeNumbers(array) {
     if (number < 2) {
       continue;
     }
-    // Iterates over divisors larger than 1 and smaller than the half of the tested number
-    for (let j = 2; j <= number / 2; j++) {
+    // Iterates over divisors larger than 1 and smaller than the square root of the tested number
+    for (let j = 2; j <= Math.sqrt(number); j++) {
       // Discontinues inner loop if integer found
       if (number % j == 0) {
         continue loop1;
