@@ -24,7 +24,7 @@ function findPrimeNumbers(array) {
 
 // generates a test array 1-100
 let numbers = [];
-for (let i = 1; i < 101; i++) {
+for (let i = 0; i <= 100; i++) {
   numbers.push(i);
 }
 console.log(numbers);
