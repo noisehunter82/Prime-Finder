@@ -6,8 +6,8 @@ function findPrimeNumbers(array) {
   // iterates over the 'array' of numbers that have to be tested
   loop1:
   for (let number in array) {
-    // Skips 0, 1, and even numbers larger than 2.
-    if (number < 2 || number > 2 && number % 2 == 0) {
+    // Skips 0 and 1.
+    if (number < 2) {
       continue;
     }
     // Iterates over divisors larger than 1 and smaller than the half of the tested number
